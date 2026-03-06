@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday Emon ❤️</title>
+
+<style>
+body{
+  background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+  text-align:center;
+  font-family: 'Arial';
+  margin-top:80px;
+}
+
+h1{
+  color:white;
+  font-size:40px;
+}
+
+#cake{
+  font-size:150px;
+}
+
+#flame{
+  font-size:60px;
+  animation: flicker 0.6s infinite;
+}
+
+@keyframes flicker{
+  0%{opacity:1;}
+  50%{opacity:0.4;}
+  100%{opacity:1;}
+}
+
+button{
+  padding:12px 25px;
+  font-size:18px;
+  border:none;
+  border-radius:20px;
+  background:#ff4081;
+  color:white;
+  cursor:pointer;
+}
+
+#message{
+  display:none;
+  font-size:24px;
+  color:white;
+  margin-top:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Happy Birthday Emon 🎉</h1>
+
+<div id="cake">🎂</div>
+<div id="flame">🔥</div>
+
+<br><br>
+
+<button onclick="blow()">Blow the Candle</button>
+
+<div id="message">
+Happy Birthday My Love ❤️ <br>
+From Debopriya 💕 <br><br>
+May all your wishes come true. <br>
+And yes… you have to tolerate all my demands forever 😌
+</div>
+
+<audio id="music">
+<source src="https://www2.cs.uic.edu/~i101/SoundFiles/HappyBirthday.mid">
+</audio>
+
+<script>
+function blow(){
+  document.getElementById("flame").innerHTML="💨";
+  document.getElementById("music").play();
+  document.getElementById("message").style.display="block";
+}
+</script>
+
+</body>
+</html>
